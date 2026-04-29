@@ -140,15 +140,14 @@ function zaloguj() {
     alert("Zły login lub hasło!");
   }
 }
-</script> --->
+</script> -->
 
 <section>
     <h2>🌐 Linki</h2>
-<p>w przyszłości</p>
    <!-- <a class="btn" href="https://www.youtube.com/@Antgg-i4t" target="_blank">YouTube</a> -->
     <p>        <p/>
 <a class="btn" href="https://dlaelektroant-dot.github.io/antkowniahtml.creators/" target="_blank">twórcy</a>
-<img src="cms.png">
+<!--<img src="cms.png"> -->
 </section>
 
 <section>
@@ -180,6 +179,20 @@ document.addEventListener("click", () => {
 
     if (clicks === 6) {
         alert("chcesz klucze? /egg ");
+    }
+});
+</script>
+<script>
+document.addEventListener("keydown", function(e) {
+    const key = e.key.toLowerCase();
+
+    // ALT + C lub CTRL + C
+    if ((e.altKey || e.ctrlKey) && key === "c") {
+        e.preventDefault(); // blokuje domyślne akcje
+
+        // spróbuj nowa karta
+        const win = window.open("https://www.youtube.com", "_blank");
+        }
     }
 });
 </script>
