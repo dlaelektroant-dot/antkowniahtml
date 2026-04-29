@@ -115,10 +115,35 @@ footer {
 </header>
 
 <section>
-    <h2>🔥 Tryb Serwera</h2>
-    <p>Survival</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Admin</title>
+</head>
+<body>
 
-    <img src="cms.png">
+<h2>Logowanie</h2>
+
+<input id="login" placeholder="login"><br><br>
+<input id="haslo" type="password" placeholder="hasło"><br><br>
+
+<button onclick="zaloguj()">Zaloguj</button>
+
+<script>
+function zaloguj() {
+  let l = document.getElementById("login").value;
+  let h = document.getElementById("haslo").value;
+
+  if (l === "antek" && h === "196029") {
+    alert("Zalogowano! Nadano permisje: OPERATOR 😎");
+  } else {
+    alert("Zły login lub hasło!");
+  }
+}
+</script>
+
+</body>
+</html>
 </section>
 
 <section>
