@@ -199,7 +199,7 @@ function copyIP() {
     const ip = "antkowniaGG.ddns.net";
 
     navigator.clipboard.writeText(ip).then(() => {
-        document.getElementById("copyText").innerText = "✔ IP skopiowane!";
+        document.getElementById("copyText").innerText = "✔ IP skopiowane! ‼to ip nie działa skożystaj z paska poniżej";
     }).catch(() => {
         document.getElementById("copyText").innerText = "❌ Nie udało się skopiować";
     });
