@@ -210,12 +210,14 @@ function copyIP() {
 </script>
 <script>
 let clicks = 0;
+let tc = 0;
 
 document.addEventListener("click", () => {
     clicks++;
 
     if (clicks === 5) {
-        alert("Gratulacje, kliknąłeś " + clicks + " razy!");
+        tc += 5;
+        alert("Gratulacje, kliknąłeś " + tc + " razy!");
         clicks = 0;
     }
 });
