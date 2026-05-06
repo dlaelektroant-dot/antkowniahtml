@@ -197,6 +197,23 @@ function zaloguj() {
 <p>server.v:B.09/BUG  website.v:1.2.chaptadlajaj</p>
 <p>ta chapta to dla jaj</p>
 <p>(:</p>
+    <button onclick="klik()">Kliknij mnie</button>
+
+<script>
+let clicks = 0;
+let tc = 0;
+
+function klik() {
+  clicks++;
+
+  if (clicks === 5) {
+    alert("Gratulacje kliknąłeś " + tc + " razy");
+    tc += 5;
+    clicks = 0;
+  }
+}
+</script>
+    
     <div style="position: fixed; bottom: 10px; right: 10px;">
   <div class="g-recaptcha" data-sitekey="6LfzEdksAAAAABBHdej3u_vgV9k0fT9DZe1cYz0O"></div>
 </div>
