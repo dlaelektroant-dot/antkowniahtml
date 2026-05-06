@@ -214,11 +214,22 @@ function klik() {
 }
 </script>
     
-    <div style="position: fixed; bottom: 10px; right: 10px;">
-  <div class="g-recaptcha" data-sitekey="6LfzEdksAAAAABBHdej3u_vgV9k0fT9DZe1cYz0O"></div>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="g-recaptcha" 
+     data-sitekey="6LfzEdksAAAAABBHdej3u_vgV9k0fT9DZe1cYz0O"
+     data-callback="captchaOK">
 </div>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div id="doUkrycia">
+  To ma zniknąć
+</div>
+
+<script>
+function captchaOK() {
+  document.getElementById("doUkrycia").style.display = "none";
+}
+</script>
 </footer>
 
 <script>
