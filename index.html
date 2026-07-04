@@ -24,7 +24,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-header {
+/*header {
     padding: 60px 20px;
     background: linear-gradient(270deg,
         #00ffff,
@@ -36,7 +36,15 @@ header {
     background-size: 1000% 1000%;
     animation: neonMove 18s ease infinite;
     box-shadow: 0 0 40px #0ff;
+}*/
+header {
+    padding: 60px 20px;
+    background-image: url("obrazek2.png"); /* ← tu Twój obrazek */
+    background-size: cover; /* dopasowanie */
+    background-position: center; /* wyśrodkowanie */
+    background-repeat: no-repeat; /* bez powtarzania */
 }
+
 
 h1 {
     font-size: 55px;
@@ -106,14 +114,13 @@ footer {
 <header>
     <img src="obrazek2.png">
     <div class="server-ip">
-        IP: antkowniaGG.ddns.net | Minecraft 1.21.4 | SURVIVAL
+        IP: antkownia2.ddns.net | Minecraft 1.21.4 | SURVIVAL
     </div>
 
     <div class="ip-box">
-        <button class="btn" onclick="copyIP()">📋 Kopiuj IP</button>
+        <button class="btn" onclick="copyIP()">Kopiuj IP</button>
         <p id="copyText" class="small"></p>
     </div>
-    <a class="btn" href="https://dlaelektroant-dot.github.io/antkownialogin/" target="_blank">przekierowywanie</a>
 </header>
     <style>
   .sekcja-czerwona {
